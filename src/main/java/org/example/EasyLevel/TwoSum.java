@@ -8,13 +8,13 @@ public class TwoSum {
     You can return the answer in any order.*/
 
     public static void main(String[] args) {
-        twoSum(new int[]{1, 2, 3, 4, 5, 6, 7}, 9);
+        twoSum(new int[]{3, 3}, 6);
     }
 
     public static int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         for (int x = 0; x < nums.length; x++) {
-            for (int y = 0; y < nums.length; y++) {
+            for (int y = x + 1; y < nums.length; y++) {
                 if (nums[x] + nums[y] == target) {
                     result[0] = y;
                     result[1] = x;
